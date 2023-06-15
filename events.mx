@@ -8,6 +8,6 @@ event onKeyPress cls={^L} {
             out "hi" -> less
         };
         catch {
-            out (That murex builtin doesn't yet include a help document.$quit) -> less
+            out (That murex builtin doesn't yet include a help document) -> less
         }"
 }
