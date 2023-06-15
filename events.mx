@@ -4,10 +4,5 @@
 
 event onKeyPress cls={^L} {
     $SHELL -c "
-        trypipe {
             out "hi" -> less
-        };
-        catch {
-            out (That murex builtin doesn't yet include a help document) -> less
-        }"
 }
