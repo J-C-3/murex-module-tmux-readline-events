@@ -3,5 +3,5 @@
 # pressing F1.
 
 event onKeyPress cls={^L} {
-    $SHELL -c "out \"hi\" -> less"
+    $SHELL -c "out 'hi' -> less"
 }
