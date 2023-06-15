@@ -3,5 +3,5 @@
 # pressing F1.
 
 event onKeyPress cls={^L} {
-    out 'hi' -> less
+    out 'hi' -> <stdout>
 }
