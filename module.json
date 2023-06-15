@@ -1,110 +1,14 @@
 [
-	{
-		"Name": "global-functions",
-		"Summary": "Some useful functions. Will be a dependency of the other modules in this package",
-		"Version": "1.5",
-		"Source": "global.mx",
-		"Dependencies": {
-			"Optional": [],
-			"Required": [
-				"tmux"
-			],
-			"Platform": [
-				"posix"
-			]
-		}
-	},
-	{
-		"Name": "help",
-		"Summary": "Provides help hotkey: {F1}",
-		"Version": "1.6",
-		"Source": "help.mx",
-		"Dependencies": {
-			"Optional": [],
-			"Required": [
-				"tmux",
-				"less",
-				"man"
-			],
-			"Platform": [
-				"posix"
-			]
-		}
-	},
-	{
-		"Name": "edit",
-		"Summary": "Provides edit hotkey: {CTRL+E} and `config` handler for $EDITOR",
-		"Version": "1.7",
-		"Source": "edit.mx",
-		"Dependencies": {
-			"Optional": [
-				"vi",
-				"vim",
-				"nano",
-				"emacs"
-			],
-			"Required": [
-				"tsplit",
-				"tmux",
-				"rm"
-			],
-			"Platform": [
-				"posix"
-			]
-		}
-	},
-	{
-		"Name": "markdown",
-		"Summary": "Provides markdown support",
-		"Version": "1.3",
-		"Source": "markdown.mx",
-		"Dependencies": {
-			"Optional": [
-				"bat",
-				"pandoc",
-				"lynx",
-				"less",
-				"more"
-			],
-			"Required": [
-				"tsplit",
-				"tmux",
-				"cat"
-			],
-			"Platform": [
-				"posix"
-			]
-		}
-	},
-	{
-		"Name": "run",
-		"Summary": "Runs a preview pane to the side of your terminal when {F9} hotkey pressed",
-		"Version": "1.2",
-		"Source": "run.mx",
-		"Dependencies": {
-			"Optional": [],
-			"Required": [
-				"less",
-				"tsplit"
-			]
-		},
-		"Platform": [
-			"posix"
-		]
-	},
-	{
-		"Name": "split",
-		"Summary": "Split the tmux pain horrizontally or vertically",
-		"Version": "1.0",
-		"Source": "split.mx",
-		"Dependencies": {
-			"Optional": [],
-			"Required": [
-				"tmux"
-			]
-		},
-		"Platform": [
-			"posix"
-		]
-	}
+    {
+        "Name": "event testing",
+        "Summary": "Testing events",
+        "Version": "0.1",
+        "Source": "events.mx",
+        "Dependencies": {
+            "Optional": [],
+            "Platform": [
+                "posix"
+            ]
+        }
+    }
 ]

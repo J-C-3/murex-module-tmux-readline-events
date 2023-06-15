@@ -1,0 +1,13 @@
+# If tmux is running, we split the window several times with useful information
+# on the active command in the interactive terminal. This is triggered via
+# pressing F1.
+
+event onKeyPress cls={^L} {
+    $SHELL -c "
+        trypipe {
+            out "hi" -> less
+        };
+        catch {
+            out (That murex builtin doesn't yet include a help document.$quit) -> less
+        }"
+}
